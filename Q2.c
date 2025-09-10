@@ -1,12 +1,20 @@
 #include<stdio.h>
-int main(){
-    int n,product;
-    printf("Enter number :");
+int main (){
+int i,n,j,count;
+    printf("Enter number of values you want to enter :");
     scanf("%d",&n);
-    product=1;
-    while(n>0){
-        product=product*n;
-        n=n-1;
+    int a[n];
+    printf("Enter values :");
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
     }
-    printf("factorial is %d",product);
-}
+    for(i=0;i<n;i++){
+        count=0;
+        for(j=0;j<n;j++){
+            if(a[i]==a[j]){
+            count=count+1;
+            }if(count<2){
+        printf("  %d",a[j]);
+        }}
+        break;
+    }}

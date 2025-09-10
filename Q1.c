@@ -1,16 +1,14 @@
 #include<stdio.h>
-int main(){
-    int i,a,b;
-    printf("Enter number 1 :");
-    scanf("%d",&a);
-    printf("Enter number 2 :");
-    scanf("%d",&b);
-    for(i=a;i<=b;i++){
-        if(i%2==0){
-            printf("  %d",i*i);
-        }
-        if(i%2!=0){
-            printf("\n  %d",i*i*i);
-        }
+int main (){
+    int i,n;
+    printf("Enter number of values you want to enter :");
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<=n-1;i++){
+        printf("Enter values :");
+        scanf("%d",&a[i]);
+    }
+    for(i=n-1;i>=0;i--){
+        printf("  %d",a[i]);
     }
 }
